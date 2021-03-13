@@ -2,6 +2,12 @@
 
 @section('content')
 <h1>Hello</h1>
-{{ $name }}
 
+
+@endsection
+
+{{'Salut'}}
+
+@section('footer')
+ Allrigth reseved by &copy 2021
 @endsection

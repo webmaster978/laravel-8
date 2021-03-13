@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $isWeekend = date
+    $name = 'joel jt';
+    return view('welcome') ->withName($name);
+});
+Route::get('about', function () {
+
+    return view('pages/about');
 });
