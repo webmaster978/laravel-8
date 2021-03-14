@@ -2,6 +2,14 @@
 
 @section('content')
 <h1>Hello</h1>
+@endsection
 {{ $name }}
 
-@endsection
+@if( $isWeekend )
+{{ "va travailler"}}
+@else
+{{" Dorcas "}}
+@endif
+
+
+

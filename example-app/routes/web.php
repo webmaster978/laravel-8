@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    $isWeekend = date
+    $isWeekend = date('N') >= 6;
     $name = 'joel jt';
-    return view('welcome') ->withName($name);
+    return view('welcome', compact('name','isWeekend'));
 });
 Route::get('about', function () {
 
