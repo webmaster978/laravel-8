@@ -2,9 +2,8 @@
 
 
 Route::get('/', function () {
-    $isWeekend = date('N') >= 1;
-    $name = 'joel jt';
-    return view('welcome', compact('name', 'isWeekend'));
+
+    dump(DB::select('SELECT * FROM posts'));
 });
 Route::get('about', function () {
 
